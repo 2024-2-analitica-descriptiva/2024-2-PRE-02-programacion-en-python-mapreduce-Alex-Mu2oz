@@ -108,12 +108,12 @@ def shuffle_and_sort(sequence):
 #
 def reducer(sequence):
     """Reducer"""
-    result = {}
+    diccionario = {}
     for key, value in sequence:
-        if key not in result:
-            result[key] = 0
-        result[key] += value
-    return list(result.items())
+        if key not in diccionario:
+            diccionario[key] = 0
+        diccionario[key] += value
+    return list(diccionario.items())
 
 #
 # Escriba la función create_ouptput_directory que recibe un nombre de
